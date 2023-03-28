@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HIDDEN OBJECT GAME WITH GAHCIMOUCHE</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<style type="text/css">
+		.img-object{
+			position: absolute;
+			display: block;
+		}
+	</style>
+</head>
+<body style="background-image:url(rock.webp) ; background-size:cover ; " class="bg-img">
+	<div class="col-2  text-center" style="height: 400px; ">
+		<p class="text-white fs-3 fw-bold slowo-1 mt-2" >.gachi</p>
+		<p class="text-white fs-3 fw-bold slowo-2" >.mortis</p>
+		<p class="text-white fs-3 fw-bold slowo-3" >.dislike</p>
+		<p class="text-white fs-3 fw-bold slowo-4" >.padj</p>
+		<p class="text-white fs-3 fw-bold slowo-5" >.windy31</p>
+		<p class="text-white fs-1 fw-bold score" >0</p>
+	</div>
+	<img src="gachi.webp" class="img-object img-1" style="left: 200px; top: 670px; height: 30px;">
+	<img src="theclown.webp" class="img-object img-2" style="left: 850px; top: 270px; height: 30px;">
+	<img src="diz.webp" class="img-object img-3" style="left: 500px; top: 470px; height: 30px;">
+	<img src="pudj.webp" class="img-object img-4" style="left: 1000px; top: 770px; height: 30px;">
+	<img src="32.webp" class="img-object img-5" style="left: 1200px; top: 100px; height: 30px;">
+	<div class="" style="text-center">
+		<img src="pobeda.webp" class="win" style="display: none; height: 300px;">
+	</div>	
+	<script type="text/javascript">
+		let number = 0
+		document.querySelector('.img-1').onclick=function() {
+			alert("ti nashyol gachi");
+			number=number+1;
+			document.querySelector('.img-1').style.display="none";
+			document.querySelector('.slowo-1').style.textDecoration="line-through";
+			document.querySelector('.score').innerHTML=number;
+			if(number == 5 ) {
+				document.querySelector('.win').style.display="block"
+				document.querySelector('.bg-img').style.display="none"
+				document.querySelector('.img-obgect').style.display="none"
+				
+			}
+
+		}
+		document.querySelector('.img-2').onclick=function() {
+			number=number+1;
+			alert("ti nashyol menya")
+			document.querySelector('.img-2').style.display="none"
+			document.querySelector('.slowo-2').style.textDecoration="line-through"
+			document.querySelector('.score').innerHTML=number;
+			if(number == 5 ) {
+				document.querySelector('.win').style.display="block"
+				document.querySelector('.bg-img').style.display="none"
+				document.querySelector('.img-obgect').style.display="none"
+			}
+		}
+		document.querySelector('.img-3').onclick=function() {
+			number=number+1;
+			alert("ti nashyol diz hahahhahah")
+			document.querySelector('.img-3').style.display="none"
+			document.querySelector('.slowo-3').style.textDecoration="line-through"
+			document.querySelector('.score').innerHTML=number;
+			if(number == 5 ) {
+				document.querySelector('.win').style.display="block"
+				document.querySelector('.bg-img').style.display="none"
+				document.querySelector('.img-obgect').style.display="none"
+			}
+		}
+		document.querySelector('.img-4').onclick=function() {
+			number=number+1;
+			alert("ti nashyol potomuchhto ya pugj ihcsDKJZGVcksdlzkgckhfsdfzcdkhjdsgfcgkhfdjzdfghjsdlkgckjsdjfghldkshfjdsjklfjldkhfzblsdhgvkjljxflhshfgnvjkdfhgvnkbdfhxvnb kkfk,fghksdjxgvkjldfgfkdghkjgfhgcsdklgfkhdgbcvzhksdjghfcbndfhiuKFhsdakflhdslkafhdsyoifl eruibvtwncebtntwernuitrbnehjhhhhhhhhghdsjfhkdjagfcfagdfjkfghdfkhgkjfdalhppppppppuuuuuuuuuuuuuuuuuuuuuuuuuudddddddddddddddddddddjjjjjjjjjjjjjjjjjjjjjjjjjjj")
+			document.querySelector('.img-4').style.display="none"
+			document.querySelector('.slowo-4').style.textDecoration="line-through"
+			document.querySelector('.score').innerHTML=number;
+			if(number == 5 ) {
+				document.querySelector('.win').style.display="block"
+				document.querySelector('.bg-img').style.display="none"
+				document.querySelector('.img-obgect').style.display="none"
+			}
+		}
+		document.querySelector('.img-5').onclick=function() {
+			number=number+1;
+			alert("ti nashyol windy31")
+			document.querySelector('.img-5').style.display="none"
+			document.querySelector('.slowo-5').style.textDecoration="line-through"
+			document.querySelector('.score').innerHTML=number;
+			if(number == 5 ) {
+				document.querySelector('.win').style.display="block"
+				document.querySelector('.bg-img').style.display="none"
+				document.querySelector('.img-obgect').style.display="none"
+			}
+		}
+	</script>
+</body>
+</html>
